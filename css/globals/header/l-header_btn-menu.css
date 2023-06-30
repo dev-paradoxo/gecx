@@ -1,0 +1,43 @@
+/* ESTILIZAÇÃO DO BOTÃO MENU */
+.l-header__btn-menu{
+    width: 35px;
+    height: 29px;
+    background-color: transparent;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+.l-header__btn-sandwich{
+    width: 100%;
+    height: 6px;
+    background-color: currentColor;
+    color: var(--color-primary);
+    border-radius: 2px;
+    transition: 0.3s;
+}
+.l-header__btn-sandwich::before, .l-header__btn-sandwich::after{
+    content: "";
+    width: 100%;
+    height: 6px;
+    background-color: currentColor;
+    display: block;
+    border-radius: 2px;
+    margin-top: -11px;
+    transition: 0.3s;
+}
+.l-header__btn-sandwich::after{
+    margin-top: 16px;
+}
+
+/* MENU ABERTO */
+.l-header__btn-menu.is-open > .l-header__btn-sandwich{ transform: rotateZ(45deg); color: var(--color-secondary);}
+.l-header__btn-menu.is-open > .l-header__btn-sandwich::before{
+    margin-top: 0px;
+    transform: rotateZ(90deg);
+    background-color: currentColor;
+}
+.l-header__btn-menu.is-open > .l-header__btn-sandwich::after{
+    margin-top: -6px;
+    transform: rotateZ(-90deg);
+    background-color: currentColor;
+}

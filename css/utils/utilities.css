@@ -1,0 +1,30 @@
+/* TODOS OS UTILITÁRIOS CONTÉM O PREFIXO "u-", EM SEGUIDA TERÁ A ABBR DA PROPRIEDADE PRINCIPAL: u-dp (Utilitário para função display), e em seguida, o valor da declaração: u-dp-block (utilitário{ display: block; } */
+
+
+/* CORES E BACKGROUNDS */
+.u-bg-light{ background-color: var(--color-light) !important;}
+.u-color-light{ color: var(--color-light) !important;}
+
+.u-bg-primary{ background-color: var(--color-primary) !important;}
+.u-color-primary{ color: var(--color-primary) !important; }
+
+.u-bg-secondary{ background-color: var(--color-secondary) !important;}
+.u-color-secondary{ color: var(--color-secondary) !important;}
+
+/* DISPLAY */
+.u-block{ display: block !important;}
+.u-flex{ display: flex !important;}
+.u-grid{ display: grid !important;}
+.u-inline{ display: inline !important;}
+
+.u-inline-block{ display: inline-block !important;}
+.u-inline-flex{ display: inline-flex !important;}
+.u-inline-table{ display: inline-table !important;}
+.u-inline-flexbox{ display: inline-flexbox !important;}
+
+/* POSITIONS */
+.u-relative{ position: relative !important;}
+.u-absolute{ position: absolute !important;}
+.u-fixed{ position: fixed !important;}
+.u-static{ position:static !important;}
+.u-sticky{ position:sticky !important;}

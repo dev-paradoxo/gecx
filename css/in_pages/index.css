@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+/*
+    - ESSE É UM ARQUIVO DE IMPORTAÇÃO CSS DA PÁGINA "INDEX.HTML".
+
+    - FOI ADOTADO ESSA METODOLOGIA AFIM DE DIMINUIR A REQUISIÇÃO HTTP
+    VÁRIOS LINKS NA PÁGINA HTML, ORGANIZACIONAL, MODULARIDADE, MANUTENÇÃO
+    E LEGIBILIDADE.
+
+    - PARA EVITAR QUE CARREGANDO APENAS UM ARQUIVO INDEX.CSS EM TODAS AS PÁGINAS,
+    OCORRERIA QUE EM ALGUMA PÁGINA QUALQUER TERIA A IMPORTAÇÃO DE UM ARQUIVO CSS QUE
+    SEQUER SERIA UTILIZADO NAQUELA PÁGINA, GERANDO UM CARREGAMENTO DE CSS DESNECESSÁRIO
+    NAQUELA PÁGINA, PARA RESOLVER ISTO, CRIAMOS A IN-PAGES E NELA CONTÉM UM CSS IMPORT
+    PARA CADA PÁGINA PRINCIPAL, FAZENDO A IMPORTAÇÃO SOMENTE DO QUE VAI SER UTILIZADO
+    NAQUELA PÁGINA.
+
+    - ESSE EXPLICATIVO SÓ ESTÁ NESSA PÁGINA INDEX.CSS.
+*/
+
+/* IMPORTANDO VARIÁVEIS */
+@import url(../var/colors.css);
+@import url(../var/fonts.css);
+@import url(../var/spacing.css);
+
+/* IMPORTANDO UTILITÁRIOS */
+@import url(../utils/utilities.css);
+
+/* IMPORTANDO MODIFICADORES */
+@import url(../utils/modify.css);
+
+/* IMPORTANDO RESET */
+@import url(../reset.css);
+
+/* IMPORTANDO CABEÇALHO */
+@import url(../globals/header/l-header.css);
+@import url(../globals/header/l-header_btn-menu.css);
+@import url(../globals/header/l-header__list.css);

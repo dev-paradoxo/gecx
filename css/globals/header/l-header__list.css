@@ -1,0 +1,42 @@
+.l-header__list{
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+
+    margin: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 15px 15px 0 0;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+
+    transition: 0.5s;
+}
+.l-header__list.is-open{
+    z-index: 1000;
+    height: calc(100% - var(--height-menu) - 20px);
+    overflow-y: auto;
+    border: 30px solid transparent;
+}
+
+.l-header__item{
+    gap: 1rem;
+    flex-wrap: wrap;
+    word-wrap:break-word;
+    width: 100%;
+    justify-content: center;
+}
+.l-header__link{
+    color: var(--color-light);
+    display: block;
+    font-weight: bold;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    font-style: normal;
+}

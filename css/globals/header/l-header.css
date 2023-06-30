@@ -1,0 +1,76 @@
+:root{
+    --height-menu: 60px;
+}
+.l-header{
+    height: var(--height-menu);
+    align-items: center;
+    justify-content: space-around;
+    padding: 25px;
+}
+
+/* NAV MENU */
+.l-header_menu{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* LOGO GECX */
+.l-header_logo{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    width: 100px;
+}
+.l-header_logo_gecx{
+    width: 100%;
+    object-fit: cover;
+}
+
+.l-header__search{
+    right: 0;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    border-radius: 3px;
+    overflow: hidden;
+    transition: 0.3s;
+    padding: 3px;
+    
+    border-radius: 25px;
+}
+.l-header__search-inp{
+    display: none;
+}
+.l-header__search-btn{
+    background-color: transparent;
+    border: none;
+    border-radius: 25px;
+    width: 45px;
+    height: 45px;
+}
+.l-search-btn__icon{
+    font-size: 3.5rem;
+}
+
+.l-header_social{
+    display: none;
+    overflow: hidden;
+}
+
+/* RESPONSIVE TABLET */
+@media (min-width: 481px) and (min-height: 555px){
+    .l-header{
+        --height-menu: 120px;
+        background-image: url("../../../assets/img/gecx/wallpaper/header-wallpaper.png");
+        background-position: top center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+}

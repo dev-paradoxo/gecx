@@ -1,0 +1,27 @@
+:root{
+    /* DEFININDO VARIÁVEIS DE CORES PRINCIPAIS */
+    --color-primary: #3C3F85;
+    --color-secondary: #242661;
+    --color-tertiary: #8587aa;
+
+    /* DEFININDO VARIÁVEIS DE CORES ADICIONAIS */
+    --color-grey: #6c757d;        /* Cinza */
+    --color-basic: #ebebeb;       /* Cinza básico */
+    --color-light: #f8f9fa;       /* Tom claro */
+    --color-white: #ffffff;       /* Branco */
+    --color-black: #000000;       /* Preto */
+    --color-disabled: #717171;
+
+    /* CORES BASEADAS EM BOOTSTRAP */
+
+    /* PALETA PRINCIPAL BOOTSTRAP */
+    --color-boot-primary: #007bff;
+    --color-boot-secondary: #6c757d;
+    --color-boot-dark: #343a40;
+
+    /* DEFININDO VARIÁVELS DE CORES SINALIZATÓRIAS */
+    --color-boot-success: #28a745;      /* Verde de sucesso */
+    --color-boot-warning: #ffc107;      /* Amarelo de aviso */
+    --color-boot-danger: #dc3545;       /* Vermelho de perigo */
+    --color-boot-info: #17a2b8;         /* Azul de informação */
+}
